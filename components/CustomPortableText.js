@@ -96,10 +96,6 @@ const PortableTextComponents = {
 };
 
 const CustomPortableText = ({ blocks }) => {
-	console.log(
-		'🚀 ~ file: CustomPortableText.js:99 ~ CustomPortableText ~ blocks:',
-		blocks
-	);
 	if (!blocks) return null;
 
 	return <PortableText value={blocks} components={PortableTextComponents} />;

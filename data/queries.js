@@ -79,24 +79,6 @@ export const freeformObj = `
 	sectionAppearance
 `;
 
-// Construct our "blocks" GROQ
-export const blocks = `
-	_type == 'freeform' => {
-		${freeformObj}
-	},
-	_type == 'accordionList' => {
-		_type,
-		_key,
-		items[]{
-			"id": _key,
-			title,
-			content[]{
-				${portableTextContent}
-			}
-		}
-	}
-`;
-
 // Construct our content "modules" GROQ
 export const modules = `
 	_type == 'marquee' => {
@@ -120,6 +102,17 @@ export const modules = `
 	},
 	_type == 'freeform' => {
 		${freeformObj}
+	},
+	_type == 'accordionList' => {
+		_type,
+		_key,
+		items[]{
+			"id": _key,
+			title,
+			content[]{
+				${portableTextContent}
+			}
+		}
 	}
 `;
 

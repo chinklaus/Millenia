@@ -1,7 +1,8 @@
+import cx from 'classnames';
 import React from 'react';
 import useInView from 'react-cool-inview';
+
 import Image from '@/components/Image';
-import cx from 'classnames';
 
 const MarqueeComp = (props) => {
 	const { data } = props;

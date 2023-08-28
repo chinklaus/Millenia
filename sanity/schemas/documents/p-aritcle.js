@@ -1,8 +1,8 @@
 import { defineType } from 'sanity';
 
 export default defineType({
-	title: 'Page',
-	name: 'pGeneral',
+	title: 'pArticle Page',
+	name: 'pArticle',
 	type: 'document',
 	fields: [
 		{
@@ -23,15 +23,12 @@ export default defineType({
 			validation: (Rule) => [Rule.required()],
 		},
 		{
-			title: 'Page Modules',
-			name: 'modules',
-			type: 'array',
-			of: [
-				{ type: 'freeform' },
-				{ type: 'marquee' },
-				{ type: 'accordionList' },
-			],
+			title: 'Image',
+			name: 'image',
+			type: 'string',
+			validation: (Rule) => [Rule.required()],
 		},
+
 		{
 			title: 'SEO + Share Settings',
 			name: 'sharing',

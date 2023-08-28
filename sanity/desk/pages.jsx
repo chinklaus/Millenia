@@ -53,6 +53,15 @@ const currentHomePage = (S) => {
 		});
 };
 
+const articlePage = (S) => {
+	return S.listItem()
+		.title('Article Page')
+		.icon(HomeIcon)
+		.child(async () => {
+			return S.document().id('article').schemaType('pArticle');
+		});
+};
+
 // Extract our error page
 const currentErrorPage = (S) => {
 	return S.listItem()
@@ -78,6 +87,7 @@ export const pagesMenu = (S) => {
 				.items([
 					currentHomePage(S),
 					currentErrorPage(S),
+					articlePage(S),
 					S.listItem()
 						.title('Other Pages')
 						.schemaType('pGeneral')

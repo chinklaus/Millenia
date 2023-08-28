@@ -1,5 +1,5 @@
-import { defineType } from 'sanity';
 import { DoubleChevronDownIcon } from '@sanity/icons';
+import { defineType } from 'sanity';
 
 export default defineType({
 	title: 'Accordion List',

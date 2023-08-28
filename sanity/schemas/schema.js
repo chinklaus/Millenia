@@ -4,6 +4,7 @@ import gCookie from './documents/g-cookie';
 import gFooter from './documents/g-footer';
 import gHeader from './documents/g-header';
 import p404 from './documents/p-404';
+import pArticle from './documents/p-aritcle';
 import pGeneral from './documents/p-general';
 import settingsBrandColors from './documents/settings-color';
 import settingsGeneral from './documents/settings-general';
@@ -33,6 +34,7 @@ const schemas = [
 	settingsGeneral,
 	settingsIntegration,
 	settingsSharing,
+	pArticle,
 
 	gAnnouncement,
 	gHeader,

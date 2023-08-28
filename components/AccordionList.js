@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Accordion from '@/components/Accordion';
 import CustomPortableText from '@/components/CustomPortableText';
 

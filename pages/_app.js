@@ -1,12 +1,13 @@
 import '@/styles/scss/main.scss';
+
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import Layout from '@/layout';
 
 import useScrollRestoration from '@/hooks/useScrollRestoration';
-import * as gtag from '@/lib/gtag';
 import { siteSetup, vs } from '@/hooks/useVsSetup';
 import useWindowDimensions from '@/hooks/useWindowDimensions';
+import Layout from '@/layout';
+import * as gtag from '@/lib/gtag';
 
 function App({ Component, pageProps }) {
 	const { data } = pageProps;
