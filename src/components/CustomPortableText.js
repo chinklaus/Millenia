@@ -74,22 +74,11 @@ const PortableTextComponents = {
 	},
 	marks: {
 		link: ({ value, children }) => {
-			return (
-				<CustomLink
-					link={value}
-					isNewTab={value.isNewTab}
-					title={children[0]}
-				/>
-			);
+			return <CustomLink link={value} title={children[0]} />;
 		},
 		callToAction: ({ value, children }) => {
 			return (
-				<CustomLink
-					link={value.link}
-					isNewTab={value.link.isNewTab}
-					title={children[0]}
-					isButton={true}
-				/>
+				<CustomLink link={value.link} title={children[0]} isButton={true} />
 			);
 		},
 	},

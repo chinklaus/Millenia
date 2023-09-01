@@ -24,6 +24,7 @@ const Layout = ({ children, siteData = {} }) => {
 
 	useEffect(() => {
 		if (siteData?.integrations?.gaID) {
+			const url = process.env.SITE_URL;
 			gtag.pageview(url, siteData?.integrations?.gaID);
 		}
 	}, [siteData]);
@@ -38,7 +39,7 @@ const Layout = ({ children, siteData = {} }) => {
 			<AdaSkip />
 			<Announcement data={siteData?.announcement} />
 			<Header data={siteData?.header} />
-			<Main siteData={siteData}>{children}</Main>
+			<Main>{children}</Main>
 			<Footer siteData={siteData} data={siteData.footer} />
 		</>
 	);

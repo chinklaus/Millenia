@@ -67,7 +67,6 @@ const Menu = ({
 								link={link}
 								onClick={onClick}
 								title={item.title}
-								isNewTab={item.isNewTab}
 							/>
 						</li>
 					);

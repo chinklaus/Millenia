@@ -35,6 +35,7 @@ function Header({ data }) {
 				})}
 			>
 				<div className="header-interior f-h">
+					<div>Millenia</div>
 					{data?.menu?.items && (
 						<Menu
 							items={data.menu.items}
