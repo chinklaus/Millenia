@@ -4,14 +4,19 @@ import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 import { media } from 'sanity-plugin-media';
 
-import Logo from '@/sanity/branding/Logo';
-import deskStructure from '@/sanity/deskStructure';
-import { apiVersion, dataset, previewSecretId, projectId } from '@/sanity/env';
-import schemas from '@/sanity/schemas/schema';
+import Logo from './src/sanity/branding/Logo';
+import deskStructure from './src/sanity/deskStructure';
+import {
+	apiVersion,
+	dataset,
+	previewSecretId,
+	projectId,
+} from './src/sanity/env';
+import schemas from './src/sanity/schemas/schema';
 
 export default defineConfig({
 	basePath: '/sanity',
-	title: '[Starter]',
+	title: 'Millenia | Sanity',
 	projectId,
 	dataset,
 	plugins: [
